@@ -1,10 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    margin-bottom: 60px;
 }
 
 body a{
@@ -13,31 +18,27 @@ body a{
 
 /* header */
 
-.container-fluid {
-    margin: 0;
-    padding: 0;
-}
+
 
 /* CARD-GROUP */
 
 
+
 /* FOOTER */
 
-#iconos i{
-    font-size: 26px;
-    padding: 0 8px;
-    color: #303030;
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 150px;
 }
 
-/* @media(max-width:1200px) {
-    #card img {
-        flex-wrap: wrap;
-        padding-top: 30px;
-    }
+#iconos a{
+    color: #212529;
+    
+}
 
-    .wrapper {
-        width: 90%;
-        margin: auto;
-        padding-top: 50px;
-    }
-} */
+#iconos a:hover{
+    color: black;
+}

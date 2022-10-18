@@ -11,12 +11,12 @@
 <link rel="stylesheet" href="src/css/main.css">
 
 <!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 <!-- Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-<title>Title</title>
+<title>Tools Rental</title>
 </head>
 <body>
       
@@ -26,44 +26,76 @@
     <div class="container-fluid" >
         
     </div>
-    <nav class="navbar navbar-expand-lg ps-5 pb-2 bg-dark opacity-75 border-0" >
-        <div class="container-fluid ">
-            <img src="./img/codoacodo.png" alt="" width="150">
-            
-            <a class="navbar-brand text-warning fs-2" href="#">TOOLS RENTAL</a>
 
-            <button class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse navbar-collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">            
+    <nav class="navbar navbar-expand-lg sticky-top bg-light p-2">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-warning fs-2 fw-bold" href="index.html">
+              <span>::TOOLS RENTAL</span>
+              <span><i class="bi bi-arrow-up-square-fill"></i></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent" >
-                <ul class="navbar-nav  fs-5" >
-                    <li class="nav-item"><a class="nav-link active text-white" href="#">ALQUILER</a></li>
-                    <li class="nav-item"><a class="nav-link active text-white" href="#">NOSOTROS</a></li>
-                    <li class="nav-item"><a class="nav-link active text-white" href="#">SERVICIOS</a></li>
-                    <li class="nav-item"><a class="nav-link active text-white" href="#">CONTACTO</a></li>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tooltip" title="Coming soon!" href="#">ALQUILER</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tooltip" title="Coming soon!" href="#nosotros">NOSOTROS</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SERVICIOS</a>
+                        <ul class="dropdown-menu dropdown-menu-end fade-down" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#equipo">Herramientas</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li><a class="dropdown-item" href="#local">Equipos</a></li>
+                            <li><a class="dropdown-item" href="#local">Maquinaria</a></li>
+
+                        <!-- <li><hr class="dropdown-divider"></li>
+
+                        <li><a class="dropdown-item" href="#">Blog</a></li> -->
+
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    
+                    </li>
+                        
+                    <li class="ms-5">
+                        <a href="./ingreso.html" class="d-flex">
+                            <button class="btn btn-warning w-100 fs-5" type="button"><i class="bi bi-person-fill"></i> Ingreso</button>
+                        </a>
+                    </li>
+                    
                 </ul>
+
             </div>
         </div>
-    </nav>      
+    </nav>     
     <!-- navbar end-->
 
     
-    
     <section>
-        <h1 class="d-block p-5 text-bg-primary text-center">ALQUILER DE HERRAMIENTAS, EQUIPOS Y MAQUINARIAS</h1>
+
+        <h1 class="d-block p-5 text-bg-dark text-center">ALQUILER DE HERRAMIENTAS, EQUIPOS Y MAQUINARIAS</h1>
     </section>
 
 
 
         <!-- Images Herramientas, equipo y maquinarias -->
-    <section>
-        <div class="card-group container">
-            <div class="col card">
+    <div class="container-fluid">
+        <div class="row card-group">
+            <div class="col-6 card">
               <img src="src/img/herramientas.jpg" class="card-img-top img-fluid" alt="..." height="280">
               <div class="card-body">
                 <h5 class="card-title">Herramientas</h5>
@@ -71,7 +103,7 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
-            <div class="col card">
+            <div class="col-4 card">
               <img src="src/img/equipos.jpg" class="card-img-top img-fluid" alt="..." height="280">
               <div class="card-body">
                 <h5 class="card-title">Equipos</h5>
@@ -79,7 +111,7 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
-            <div class="col card">
+            <div class="col-2 card">
               <img src="src/img/Maquinaria.jpg" class="card-img-top img-fluid" alt="..." height="280">
               <div class="card-body">
                 <h5 class="card-title">Maquinarias</h5>
@@ -87,32 +119,22 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
-          </div>
-    </section>
+        </div>
+    </div>
 
-    <!-- Otros  -->
-    <section>
-        
-    </section>
+   <!-- <section id="prefooter">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia iste sed laboriosam culpa autem eveniet impedit ad ea ipsa, eius minima amet quis itaque placeat beatae perferendis dolor vero voluptas soluta harum voluptate et. Placeat maiores quis maxime, perferendis non praesentium recusandae modi sequi eius dolorem laboriosam similique ad repudiandae consequatur quaerat animi excepturi! Ipsum accusamus atque vitae aperiam. Reprehenderit, molestias commodi? Eius, voluptates est. Officia nobis deleniti excepturi, quaerat enim at pariatur nulla ducimus quas consequatur quidem dolore ab odio aut error totam repudiandae beatae minima in necessitatibus delectus maiores optio. Ad possimus odit animi cupiditate consequuntur deleniti blanditiis accusamus corporis ab sunt. Ipsa nam veniam, aliquam, id eum laudantium accusantium doloribus architecto iure unde qui saepe est, veritatis autem odio eaque! Quos dolor sequi numquam aliquam, est a quo harum odit minima, fugit obcaecati. Consequatur, alias consequuntur! Labore rerum voluptate ipsam consequuntur commodi. Voluptatem, temporibus rem non praesentium odit amet architecto numquam omnis laboriosam deleniti totam natus assumenda id reprehenderit dicta modi harum iure, repudiandae aspernatur! Magnam obcaecati facere corporis commodi ut aliquam, earum, dicta dolores eaque, harum officiis quidem eos saepe. Rerum vero deserunt perspiciatis optio, et fugit similique delectus voluptas esse, nesciunt excepturi totam sed eum!</p>
+   </section> -->
 
-
-    <!-- Referencia e importancia  -->
-    <section>
-       
-    </section>
-
-    <!-- Formulario Registro  -->
-    <section>    
-       
-        
-    </section>    
-   
     <!-- Pie de página -->
-    <footer class="w100 d-flex align-items-center justify-content-center flex-wrap"> 
-        <p class="fs-5 px-3 pt-3">Rental Tools - Todos Los Derechos Reservados 2022</p>
-        <div id="iconos">
-            <a href="https://www.facebook.com/" target="_new"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.twitter.com/" target="_new"><i class="bi bi-twitter"></i></a>
+    <footer class="text-center text-bg-warning p-2">
+        <div class="card-header">
+            <h2>Tools Rental</h2>
+        </div>
+        <p class="fs-5">Todos Los Derechos Reservados 2022</p>
+        <div class="fs-4" id="iconos">
+            <a href="https://www.facebook.com/" target="_new"><i class="bi bi-facebook "></i></a>
+            <a href="https://www.twitter.com/" target="_new"><i class="bi bi-twitter px-4"></i></a>
             <a href="https://www.instagram.com/" target="_new"><i class="bi bi-instagram"></i></a>
         </div>
     </footer>
@@ -120,9 +142,13 @@
       
     
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
 
 </body>
 </html>
