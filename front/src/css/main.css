@@ -11,8 +11,33 @@ body a{
     text-decoration: none;
 }
 
+/* header */
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+/* CARD-GROUP */
+
+
+/* FOOTER */
+
 #iconos i{
     font-size: 26px;
     padding: 0 8px;
     color: #303030;
 }
+
+/* @media(max-width:1200px) {
+    #card img {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+} */
